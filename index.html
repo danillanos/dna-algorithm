@@ -1,0 +1,16 @@
+<script src="test.js"></script>
+<script src="data.js"></script>
+
+<div>
+
+ <h1>Dna Analyzer</h1>
+<script>
+
+data.forEach(matrix => {
+    document.write(JSON.stringify( matrix.adn));
+    document.write( '<b> Is a : ' + ( (analyzerObject.isMutant(matrix.adn)) ? 'Mutant' : 'Human') + '</b>' );
+    document.write( '<br/>' );
+});
+
+</script>
+</div>
